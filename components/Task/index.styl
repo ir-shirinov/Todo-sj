@@ -1,0 +1,62 @@
+.container
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+  margin-bottom gutter(4)
+
+.numberTask,
+.textTask
+  width gutter(2)
+  margin-right gutter(2)
+  font-size 20px
+  text-align left
+  color $GREEN
+
+.textTask
+  width gutter(34)
+
+.fieldTask
+  width gutter(34)
+  height gutter(4)
+  padding gutter()
+  margin-right gutter(2)
+  text-align left
+  font-size 20px
+  color $GREEN
+  border 1px solid $GREEN
+
+  &:focus
+    outline none
+    border 1px solid $GREEN_LIGHT
+
+.removeTask
+  width gutter(10)
+  height gutter(4)
+  align-items center
+  justify-content center
+  margin-right gutter(2)
+  background-color $GREEN
+
+.removeText
+  color
+
+.completedTask
+  width gutter(3)
+  height gutter(3)
+  border 2px solid $GREEN
+
+.done
+  position relative
+
+  &::before
+    content ''
+    position absolute
+    top 50%
+    left 50%
+
+    width gutter(1.5)
+    height gutter(1.5)
+    background-color $GREEN
+    transform translate(-50%,-50%)
+
