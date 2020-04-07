@@ -19,7 +19,7 @@ startupjsServer({ getHead }, ee => {
 
 function getHead (appName) {
   return `
-    <title>HelloWorld</title>
+    <title>Todo app</title>
     <!-- Put vendor JS and CSS here -->
   `
 }
